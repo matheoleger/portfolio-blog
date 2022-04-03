@@ -1,0 +1,55 @@
+/* Biography main */
+
+.bio-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-section h1 {
+    font-size: 40px;
+    margin: 40px;
+}
+
+.bio-box-item-list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BoxItem */
+
+.box-item-container {
+    transition: .5s ease-in-out;
+    background-color: var(--light-color);
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    border: 2px solid var(--dark-color);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-item-container img {
+    width: 120px;
+    height: auto;
+}
+
+.box-item-hover {
+    transition: .5s ease-in-out;
+    width: 310px;
+    height: 420px;
+    box-shadow: 0 0 20px black;
+}
+
+.box-item-text {
+    text-align: center;
+    margin: 0;
+}
+
+/* BoxDetails */

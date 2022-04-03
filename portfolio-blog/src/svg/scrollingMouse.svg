@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 1000 1000">
+    <defs>
+    <style>
+        .cls-1 {
+        fill: none;
+        stroke: #f2f2f2;
+        stroke-width: 30px;
+        fill-rule: evenodd;
+        }
+
+        .cls-2 {
+        fill: #f2f2f2;
+        }
+    </style>
+    </defs>
+    <path id="Rectangle_arrondi_1" data-name="Rectangle arrondi 1" class="cls-1" d="M500,219.708H500A158.591,158.591,0,0,1,658.594,378.3V621.7A158.591,158.591,0,0,1,500,780.292H500A158.591,158.591,0,0,1,341.406,621.7V378.3A158.591,158.591,0,0,1,500,219.708Z"/>
+    <rect id="Rectangle_arrondi_2" data-name="Rectangle arrondi 2" class="cls-2" x="486" y="323" width="27" height="113" rx="10" ry="10"/>
+    <image id="Polygone_1_copie" data-name="Polygone 1 copie" x="471" y="128" width="58" height="49" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAxCAYAAACLfLrrAAAD/ElEQVRogcWaS2xVVRSGvz60psGmpjSpAZqAtj5QUpUEBhBCYoAhdabOmMkIBmoTjI8SqLY+KCQ8RpQBpIxwiI8J6sRHYqKlBtrE2MRYQ5o0BZsSqDX7Zt3mer337P+cs/fxT27Se+7aa6///vucvfZ/27CwsEDB2GfTXS1y2qKJPgD8ZH9vAe4VNXFjURMZXgOetNfBIicuUtG1wBTQbu/ngV7gVhGTF6noYAVJ7O/3ipq8KEWfBX4EmqquLwPPV9y30VCUoqM1SGLXThRRQBFE+4HdCZ+7z16KXUTspfsQMAls9MT9CjwNLMUqJLaihwSSWMzhmIXEVPRR4CawRoy/Y9vNHzGKianoUAqSWOxQrGJiKboV+M7lTzluBdgGfB+6oBiKOnKnMpAsjz2ZcWwiYhB9GdieY7wb+0rAekoIvXRb7QG0Lmee34EngL8C1RVc0YEAJLEcbwbIs4qQinYDN6xJSMJ9+6zZE7dkx7nfQhQXUtEPBZIOZ4DTQpzLNRKgrhJCKboT+EqIm7N7D1O/QxizS8ydiBCKNtqWoOBdI+te74hjRkPUGYLoAaBPiJsAzla8P2fXfOizOXIh79JtA6aBTiF2D/BF1bUXa1yrBWe3PA5kLjavom+LJD+tQ+hL+8yHTpsrM/Io2mNL70FP3F2zUqYS8vwMtHjyOGt0c0KeRORR9GOBJPYwSSpuymJ8cJ7wJ1mLzaqou98+E+JmbTvxTdJm202XkHMv8LlY5yqyKNqcwtB6S3yAuJgjYs5Roav6D7IQdQ77U0LcD8D5FHnHbIwPmVz+tEu3w+6pRzxxK9bRfJ2ynh3WBfnOo/O23cypidMqelQg6XA5A0mHb4BxIa7dapGRRtFnzG333R+LtrRn0hRSAXcK+sXOtklYtq5J6a5SKao+BEZykMTGDgtxTeK2VIKq6H7gihA3Y2ouqgXUQaup2i3E9ivdlaJoi501FQwEIInlGBBjPxK6Komoc9AfE+LUB4mKccvpwybF5fct3S7rWNo8ef42P1bZB9PA+cPfCoLcNpd/tl6AL8GQQNLhQgSSWM4xIe5h4P2kgCRF1W9zwfrZut9mTgRZVfVINKSwMI5HJInlPibElS2dml1VPUWdU35RSD5tjcRdITYPWuzM2iPkeBW4VH2xlmKtvvVegdcLIInN8YYY+0GtrqoWUbd/bRASqjZIKNSzY6qxvtYeXL101T7Tue3PqX1mQGTut6sVHRZIksKqDI0Jm9uH1mqXv1JR57ZfE86CZbddPgsGRofo8v/rTFxWtNGMJ+UH2MH/kSQ296AQ12CWT4ljmahzwl8QBk+KPxDFhqvhujCH+6+0ksvvlm50By4SVCfyT6D3H9/J7mtUWgahAAAAAElFTkSuQmCC"/>
+    <image id="Polygone_1_copie_2" data-name="Polygone 1 copie 2" x="471" y="823" width="58" height="49" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAxCAYAAACLfLrrAAAELElEQVRogc2aW4hVZRTHf3MaUaYaBBENw0hK01IIBCNwerJe68EHe7KnRPASXhKv04NWDqNg0IOCDwoGCeVDPRQykooaeRksL6UhJtJAinLImEorFvx3HM+cs7/17Zv+Xs45+6y9vvXf69vfXt86p6Ner3cDPwETCPMa8LXDrgpeBb5yjDMETKsBdWC9M7BtQOdDINJi2O603WAaa/qwGzjtOOl5YHGOAIvCYpjh8HVK2rCpmxycC3xjxwIn37SpoNcHwTjgR72m8S/wCnDEbGoNhnZgvyNwG+C9ByQSjR0SaXyaiKQpo8Zk4ALQFXByF3gR+CFzuNl4ATjjWCf+AKYDvyQHak0G9kW/I4ROLUxVs925GPY3iqRFRlE27R540uHwDeBARWJfBz532F0DnlNW/6c5o8jgXefgW4HR/lgzY2P0OU9e0yySNkKNT4DjDqfPAsuK1zWC5cAzDrtjin0EraZuwmzg25SLkVDX42Yop5h2TNSt1B2w+weYA5xs9WWaCDthryMQC2BzdPh+tjhEGnvaiSSQUXQ1rQ5+PDBI6tXMQWGzKuRgSFc0RE1Lf6iqiqFDPkMxGu+Hbp1QRtGKdx6Y4hjwzXaLQQYWAPscp/2sGvzPNCPP1TIHK5xxfuCoqjx0yZeHlSGROIWiomDAYWcl5Ko8CsVq+Qox4C1YPFM3werMQeCRgN2IOjOSUuptb0aRw50Ou5hp14oPndN/V8ymIiajaHt0GRgbsLO9YA9wNMZ5xJ74lqoy9544JqPI8SaHXcyjoTGWbc5HVG/sxj9WqPExcNFhZw/7hRF+39I5IS4ohihip25CVAdOlUsa3apnJzp8ZupEZskoGuhLh50Fvs5ht84p8ous7dasGUWLwTlgVMDOHuYzgUspfr537Gv/0iOunZ9UsmYUDbjDYTdaG/R2eDfvH2UVSc6MonvLHjfjHbbzgIMtjnmm4m/aeGcONk9G0cBrnbbNja2YBtvaPCIpQCjqhA867Oz+ervh8yIdCzGYdNvzkHfqJvSoogmRdPlxdtuR7yMOu1SK+sHosLr88wN2Jmyjqh+PyP1FiKTAjBpPqWIaE7C7q9fQRR5W9rPugu6jiHs04aqz99rpnEl9RYmk4Iwaj+rem5TTz3VgaqtGdFaKzKhxJ6LLn8bqIkVSQkbRQmMd85cynn8CeFl72sIoOqMowKUZA7VzlhQtkpKEGt+pcx5Larc9D2VM3YQn1OV/zGn/uxagX8sIpqyMooA9Xf6EzWWJpOSMouLBuvxPB+yu6F8mw2UFUmZGUeArHXYryhRJBUKNz4BDKd8fcv5kn4sqhKJfrO+1OH6vol/MKxN6tk2Xf6f6RaVT9mLUyHg9bpIu/201xm5UMXhVGUV9n96Gz5uqEknFGUWt0bN6Pwv4u6qBq/5Lqgl7p+F9NQD/AW1n/ONz+Y/6AAAAAElFTkSuQmCC"/>
+</svg>

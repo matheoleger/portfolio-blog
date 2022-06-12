@@ -30,10 +30,11 @@ function Header (){
             <div class="navbar_wrapper">
                 <nav>
                     <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#bio">Biographie</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">À propos</a></li>         
+                        <li><a href="/#home" onClick={() => reduceDiv()}>Accueil</a></li>
+                        <li><a href="/#bio" onClick={() => reduceDiv()}>Biographie</a></li>
+                        <li><a href="/#projects" onClick={() => reduceDiv()}>Projets</a></li>
+                        <li><a href="/blog" onClick={() => reduceDiv()}>Blog</a></li>
+                        <li><a href="/#contact" onClick={() => reduceDiv()}>Contacter</a></li>         
                     </ul>
                 </nav>
             </div>

@@ -1,0 +1,112 @@
+/* HOME - PROFIL */
+.home-section {
+    background-color: var(--main-color);
+    /* position: relative; */
+}
+
+.profil {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil img {
+    /* height: 850px; */
+    height: 100vh;
+    /* margin-top: -20px; */
+    width: 35em;
+    object-fit: cover;
+    object-position: -10% 10%;
+}
+
+.profil .name-desc {
+    /* position: absolute;
+    top: 25%;
+    right: 20%; */
+    /* right: 300px; */
+    color: var(--bg-color);
+    margin-right: 20em;
+}
+
+.profil h1 {
+    font-size: 100px;
+    margin: -10px;
+}
+
+.profil .title-of-home {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+.profil #lastname {
+    margin-top: -40px;
+}
+
+.profil #firstname {
+
+}
+
+.name-desc .description {
+    width: 500px;
+    display: flex;
+}
+
+.description img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: -60px;
+}
+
+.description p {
+    width: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+    .profil img {
+        margin-left: -9em;
+    }
+
+    .profil .name-desc {
+        top: 32em;
+        color: var(--bg-color);
+        /* background-color: var(--bg-color); */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .profil .name-desc h1 {
+        font-size: 80px;
+        background-color: var(--dark-color);
+        color: var(--pseudo-background);
+        /* margin-left: .1em; */
+        padding-left: .2em
+    }
+
+    .profil #lastname {
+        margin-top: -.1em;
+        padding: 0;
+        height: 1.3em;
+        padding-left: .2em;
+        width: 3.3em;
+    }
+
+    .profil #firstname {
+        height: 1.4em;
+        padding-right: 0.2em;
+        /* width: 3.3em;    */
+    }
+
+    .profil p {
+        color: var(--pseudo-background);
+        margin-left: 2em;
+    }
+}
+
+
+  

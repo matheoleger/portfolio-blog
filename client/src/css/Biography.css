@@ -3,6 +3,9 @@
 .bio-section {
     display: flex;
     flex-direction: column;
+    background-image:url(../img/background-with-trait3.png);
+    background-position:center;
+    background-size: cover;
 }
 
 .bio-section h1 {
@@ -11,10 +14,20 @@
 }
 
 .bio-box-item-list {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .bio-box-item-list {
+        flex-direction: column;
+    }
+    
+    .bio-section {
+        height: 100%;
+    }
 }
 
 
@@ -22,7 +35,6 @@
 
 .box-item-container {
     transition: .5s ease-in-out;
-    background-color: var(--light-color);
     width: 300px;
     height: 400px;
     border-radius: 30px;
@@ -32,18 +44,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: var(--pseudo-background);
 }
 
 .box-item-container img {
+    transition: .5s ease-in-out;
     width: 120px;
     height: auto;
+    filter: invert(85%) sepia(15%) saturate(7151%) hue-rotate(305deg) brightness(97%) contrast(106%);
+}
+
+.box-item-container .icon-item-hover {
+    transition: .5s ease-in-out;
+    filter: invert(0%) sepia(0%) saturate(7151%) hue-rotate(305deg) brightness(97%) contrast(106%);
 }
 
 .box-item-hover {
     transition: .5s ease-in-out;
     width: 310px;
     height: 420px;
+    background-color: var(--main-color);
     box-shadow: 0 0 20px black;
 }
 

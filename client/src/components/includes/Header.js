@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ScrollingMouse from '../../svg/scrollingMouse.svg'
+import MyLogo from '../../img/logo-ml.png'
 
 import '../../css/header.css';
  
@@ -29,6 +30,8 @@ function Header (){
             </div>
             <div class="navbar_wrapper">
                 <nav>
+                    {/* <img class="menu-logo menu-logo-disappear" src={MyLogo}/> */}
+
                     <ul>
                         <li><a href="/#home" onClick={() => reduceDiv()}>Accueil</a></li>
                         <li><a href="/#bio" onClick={() => reduceDiv()}>À propos</a></li>

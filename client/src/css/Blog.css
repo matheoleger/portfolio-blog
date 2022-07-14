@@ -1,6 +1,35 @@
-.blog-page {
+
+/* .blog-page h1 {
+    font-family: 'Ibarra Real Nova';
+    font-size: 3em;
+    margin-left: 20px;
+    text-decoration: underline;
+} */
+
+/* .blog-page h2 {
+    font-family: 'Ibarra Real Nova';
+} */
+
+.scriptoom-logo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.8em;
+    margin-bottom: 2em;
+}
+
+.scriptoom-logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.scriptoom-logo img {
+    width: 17em;
+    height: 100%;
+    /* margin-right: 1em; */
+    margin-bottom: -1.5em;
 }
 
 .bloghome-summarycard-list {
@@ -9,10 +38,32 @@
     grid: repeat(3, 500px) / repeat(2, 500px);
 }
 
-.nav-menu {
+.blog-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-nav-menu {
     border-left: 1px solid #000;
     position: fixed;
-    right: 15em;
-    margin: 20em auto;
+    right: 12em;
+    top: 45vh;
+    /* margin: 15em auto; */
     list-style-type: none;
+    padding-bottom: 15px;
+}
+
+/* .blog-nav-menu li h4 a {
+    cursor: pointer;
+    color:#000;
+} */
+
+.blog-nav-menu li a {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+.blog-nav-menu li a:hover {
+    color: var(--main-color);
 }

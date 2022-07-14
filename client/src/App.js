@@ -31,6 +31,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={< Main />}></Route>
           <Route exact path='/blog' element={< Blog />}></Route>
+          <Route exact path='/blog/categories/:category' element={< Blog />}></Route>
         </Routes>
 
       </div>

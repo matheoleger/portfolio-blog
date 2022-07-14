@@ -20,6 +20,7 @@ function App() {
     )
   }, [])
 
+  document.title = "Mathéo LEGER - Portfolio"
 
   return (
     <Router>

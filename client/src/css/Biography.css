@@ -3,9 +3,9 @@
 .bio-section {
     display: flex;
     flex-direction: column;
-    background-image:url(../img/background-with-trait3.png);
+    /* background-image:url(../img/background-with-trait3.png);
     background-position:center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .bio-section h1 {
@@ -61,10 +61,8 @@
 
 .box-item-hover {
     transition: .5s ease-in-out;
-    width: 310px;
-    height: 420px;
     background-color: var(--main-color);
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .box-item-text {

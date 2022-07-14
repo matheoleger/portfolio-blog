@@ -7,10 +7,10 @@ import CompetenceImage from '../../img/employee.png'
 
 import BoxItem from './bio-components/BoxItem';
 
-function Biography (){
+function About (){
     return (
         <section class="bio-section main-section" id="bio">
-            <h1>BIOGRAPHIE</h1>
+            <h1>À PROPOS</h1>
             <div class="bio-box-item-list">
                 <BoxItem image={ExperienceImage} title="Expériences" description="Mes expériences professionnelles"/>
                 <BoxItem image={FormationImage} title="Formation" description="Mon parcours scolaire"/>
@@ -20,4 +20,4 @@ function Biography (){
     )
 }
  
-export default Biography;
+export default About;

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { ClipLoader, BarLoader, BeatLoader, BounceLoader, CircleLoader, ClimbingBoxLoader } from "react-spinners";
 
 import SummaryCard from "./summaryCard";
 
@@ -15,11 +17,38 @@ import SummaryCard from "./summaryCard";
 */
 
 function CategoryDetails (){
+    
+    const [posts, setPosts] = useState();
+
+    const setCardsInformations = () => {
+        axios.get("/api/posts").then((response) => setPosts(response.data));
+    }
+
+    useEffect(() => {
+        setCardsInformations();
+    },[])
+
     return (
         <div>
-            <h2>Derniers articles</h2>
+            <h2 class="category-name">Derniers articles</h2>
             <section class="bloghome-summarycard-list">
-                <SummaryCard 
+                {
+                (posts) ?
+                posts.map(post => (
+                    <SummaryCard 
+                        id={post.id}
+                        tags={post.tags}
+                        imageSrc={post.cover}
+                        title={post.title}
+                        description={post.description}
+                        date={new Date(post.date)}
+                        slug={post.slug}
+                    />
+                ))
+                :
+                <div class="post-spinner"><ClimbingBoxLoader/><h3>Chargement...</h3></div>
+                }
+                {/* <SummaryCard 
                 imageSrc="https://the-public-domain-review.imgix.net/essays/petrified-waters/caus1620_0034-edit-3.jpg?fit=max&w=1200&h=850"
                 title="Le monde touche-t-il a sa fin ?"
                 description="Et bien oui, entre crise écologique et à l'aube d'une nouvelle guerre mondiale, seront nous à l'abris de la fin du monde ?"
@@ -46,7 +75,7 @@ function CategoryDetails (){
                 description="Et bien oui, entre crise écologique et à l'aube d'une nouvelle guerre mondiale, seront nous à l'abris de la fin du monde ?"
                 date="12 juin 2022"
                 >
-                </SummaryCard>
+                </SummaryCard> */}
                 
             </section>       
         </div>

@@ -4,6 +4,12 @@
     width: 400px;
     height: 450px;
     /* border-bottom: 1px solid rgb(131, 131, 131); */
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .summary-card:hover {
@@ -14,21 +20,28 @@
 
 .summary-card-image {
     width: 400px;
-    border-radius: 5px;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
 }
 
 .summary-card-title {
     margin: 0;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 .summary-card-description {
     margin: 0;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .summary-card-date {
     color: rgb(131, 131, 131);
     margin: 0;
     font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
 }

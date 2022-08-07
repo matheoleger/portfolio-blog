@@ -5,8 +5,6 @@ import {useLocation } from 'react-router';
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
-// import { NotionRenderer } from 'react-notion-x'
-// import { Render } from '@9gustin/react-notion-render';
 import Tag from "./tag"
 
 import '../../css/SummaryCard.css';
@@ -27,7 +25,6 @@ function Post (){
 
     return (
         <article class="post">
-            {/* <img>{post.post.cover}</img> */}
             {
                 (post.post) ? (
                     <>
@@ -35,8 +32,8 @@ function Post (){
                         <div class="post-date-and-tags">
                             <h4 class="post-date">{new Date(post.post.date).toLocaleDateString('fr-FR')}</h4>
                             <div class="tag-list">
-                                {post.post.tags.map(tag =>(
-                                    <Tag name={tag.name} id={tag.id} color={tag.color}/>
+                                {post.post.tags.map((tag, key) =>(
+                                    <Tag key={key} name={tag.name} id={tag.id} color={tag.color}/>
                                 ))}
                             </div>
                         </div>
@@ -46,13 +43,6 @@ function Post (){
                     </>
                 ) : <div class="post-spinner"><ClimbingBoxLoader/><h3>Chargement...</h3></div>
             }
-
-            {/* <NotionRenderer>{post.markdown}</NotionRenderer> */}
-            {
-                // (post) ? <NotionRenderer recordMap={post} fullPage={true} darkMode={false}/> : <></>
-            }
-            {/* <Render blocks={post} /> */}
-            {/* <ReactMarkdown>{post.markdown}</ReactMarkdown> */}
             <section class="post-content">
                 <ReactMarkdown children={post.markdown} remarkPlugins={[remarkGfm]}/>
             </section>

@@ -28,10 +28,6 @@ export const getPostsFromNotion = async () => {
         ]
     });
 
-    // return response.results.map(res => {
-    //     return pageToPostTransformer(res);
-    // })
-
     return await getFormattedPage(response);
 
 }
@@ -90,60 +86,8 @@ const getPropertiesOfPage = async (pageId: string, properties: any) => {
     return formattedProperties;
 }
 
-// export const getPost = async (slug: string) => {
-//     const response = await client.databases.query({
-//         database_id: database,
-//         filter: {
-//             property: 'Slug',
-//             formula: {
-//                 string: {
-//                     equals: slug // slug
-//                 }
-//             },
-//             // add option for tags in the future
-//         },
-//         sorts: [
-//             {
-//                 property: 'Updated',
-//                 direction: 'descending'
-//             }
-//         ]
-//     });
-
-//     if (!response.results[0]) {
-//         throw 'No results available'
-//     }
-
-//     // grab page from notion
-//     const page = response.results[0];
-
-//     console.log({page});
-
-//     // const mdBlocks = await n2m.pageToMarkdown(page.id)
-//     // const markdown = n2m.toMarkdownString(mdBlocks);
-//     // const post = pageToPostTransformer(page);
-
-//     // return {
-//     //     post,
-//     //     markdown
-//     // }
-
-//     return page
-// }
-
-// export const getPost = async (id: string) => {
-
-//     // const response = await client.pages.retrieve({ page_id: id });
-//     const response = await client.blocks.children.list({block_id: id});
-//     console.log(response);
-
-//     return response.results;
-// }
-
 export const getPost = async (id: string) => {
     const page = await client.pages.retrieve({ page_id: id });
-
-    // console.log({page});
 
     const mdBlocks = await n2m.pageToMarkdown(page.id)
     const markdown = n2m.toMarkdownString(mdBlocks);
@@ -155,6 +99,4 @@ export const getPost = async (id: string) => {
         post,
         markdown
     }
-
-    // return page
 }

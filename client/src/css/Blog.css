@@ -13,20 +13,25 @@
 .scriptoom-logo {
     display: flex;
     flex-direction: column;
+    position: fixed;
     align-items: flex-start;
-    margin-top: 0.8em;
+    /* margin-top: 0.8em; */
     margin-bottom: 2em;
+    width: 100vw;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .scriptoom-logo h1 {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .scriptoom-logo img {
-    width: 17em;
+    width: 12em;
     height: 100%;
     /* margin-right: 1em; */
     margin-bottom: -1.5em;
@@ -45,6 +50,7 @@
 .blog-section {
     display: flex;
     flex-direction: row;
+    margin-top: 8em;
 }
 
 .blog-nav-menu {
@@ -62,13 +68,14 @@
     color:#000;
 } */
 
-.blog-nav-menu li a {
+.blog-nav-menu .blog-category-filter {
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     color: rgb(95, 95, 95);
+    cursor: pointer;
 }
 
-.blog-nav-menu li a:hover {
+.blog-nav-menu .blog-category-filter:hover {
     color: var(--main-color);
 }
 

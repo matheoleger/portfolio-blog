@@ -10,7 +10,7 @@ import Projects from './main-content/Projects';
 
 function Main (){
     return (
-        <main class="scroller">
+        <main className="scroller">
             <Home/>
             <About/>
             <Projects/>

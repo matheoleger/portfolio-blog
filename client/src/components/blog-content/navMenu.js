@@ -9,7 +9,7 @@ export default function NavMenu ({setCategory, categories}){
     }, [categories])
 
     return (
-        <ul class="blog-nav-menu">
+        <ul className="blog-nav-menu">
             <li><h4>Toutes les catégories</h4></li>
             {
             listOfCategories.map((category, key) => (

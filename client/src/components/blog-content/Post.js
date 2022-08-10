@@ -24,26 +24,26 @@ function Post (){
     useEffect(getPostBySlug, []);
 
     return (
-        <article class="post">
+        <article className="post">
             {
                 (post.post) ? (
                     <>
-                        <img class="post-img" src={post.post.cover}/>
-                        <div class="post-date-and-tags">
-                            <h4 class="post-date">{new Date(post.post.date).toLocaleDateString('fr-FR')}</h4>
-                            <div class="tag-list">
+                        <img className="post-img" src={post.post.cover}/>
+                        <div className="post-date-and-tags">
+                            <h4 className="post-date">{new Date(post.post.date).toLocaleDateString('fr-FR')}</h4>
+                            <div className="tag-list">
                                 {post.post.tags.map((tag, key) =>(
                                     <Tag key={key} name={tag.name} id={tag.id} color={tag.color}/>
                                 ))}
                             </div>
                         </div>
-                        <h1 class="post-title">{post.post.title}</h1>
+                        <h1 className="post-title">{post.post.title}</h1>
 
-                        <p class="post-description">{post.post.description}</p>
+                        <p className="post-description">{post.post.description}</p>
                     </>
-                ) : <div class="post-spinner"><ClimbingBoxLoader/><h3>Chargement...</h3></div>
+                ) : <div className="post-spinner"><ClimbingBoxLoader/><h3>Chargement...</h3></div>
             }
-            <section class="post-content">
+            <section className="post-content">
                 <ReactMarkdown children={post.markdown} remarkPlugins={[remarkGfm]}/>
             </section>
             

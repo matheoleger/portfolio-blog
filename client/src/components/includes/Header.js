@@ -25,12 +25,12 @@ function Header (){
 
     return (
         <div>
-            <div class="menu-button" onClick={() => isMenuOpen ? reduceDiv() : enlargeDiv() }>
-                <div class="menu-button-burger"></div>
+            <div className="menu-button" onClick={() => isMenuOpen ? reduceDiv() : enlargeDiv() }>
+                <div className="menu-button-burger"></div>
             </div>
-            <div class="navbar_wrapper">
+            <div className="navbar_wrapper">
                 <nav>
-                    {/* <img class="menu-logo menu-logo-disappear" src={MyLogo}/> */}
+                    {/* <img className="menu-logo menu-logo-disappear" src={MyLogo}/> */}
 
                     <ul>
                         <li><a href="/#home" onClick={() => reduceDiv()}>Accueil</a></li>
@@ -41,7 +41,7 @@ function Header (){
                     </ul>
                 </nav>
             </div>
-            <div class="scrolling-mouse">
+            <div className="scrolling-mouse">
                 <img src={ScrollingMouse}/>
             </div>
         </div>  

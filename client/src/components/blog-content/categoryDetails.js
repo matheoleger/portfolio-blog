@@ -46,8 +46,8 @@ function CategoryDetails ({category, setListOfCategories}){
 
     return (
         <div>
-            <h2 class="category-name">{category}</h2>
-            <section class="bloghome-summarycard-list">
+            <h2 className="category-name">{category}</h2>
+            <section className="bloghome-summarycard-list">
                 {
                 (posts) ?
                 posts.map((post, key) => {
@@ -86,7 +86,7 @@ function CategoryDetails ({category, setListOfCategories}){
                 }
                 )
                 :
-                <div class="post-spinner"><ClimbingBoxLoader/><h3>Chargement...</h3></div>
+                <div className="post-spinner"><ClimbingBoxLoader/><h3>Chargement...</h3></div>
                 }            
             </section>       
         </div>

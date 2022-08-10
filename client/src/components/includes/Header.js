@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ScrollingMouse from '../../svg/scrollingMouse.svg'
+import MyLogo from '../../img/logo-ml.png'
 
 import '../../css/header.css';
  
@@ -24,11 +25,13 @@ function Header (){
 
     return (
         <div>
-            <div class="menu-button" onClick={() => isMenuOpen ? reduceDiv() : enlargeDiv() }>
-                <div class="menu-button-burger"></div>
+            <div className="menu-button" onClick={() => isMenuOpen ? reduceDiv() : enlargeDiv() }>
+                <div className="menu-button-burger"></div>
             </div>
-            <div class="navbar_wrapper">
+            <div className="navbar_wrapper">
                 <nav>
+                    {/* <img className="menu-logo menu-logo-disappear" src={MyLogo}/> */}
+
                     <ul>
                         <li><a href="/#home" onClick={() => reduceDiv()}>Accueil</a></li>
                         <li><a href="/#bio" onClick={() => reduceDiv()}>À propos</a></li>
@@ -38,7 +41,7 @@ function Header (){
                     </ul>
                 </nav>
             </div>
-            <div class="scrolling-mouse">
+            <div className="scrolling-mouse">
                 <img src={ScrollingMouse}/>
             </div>
         </div>  

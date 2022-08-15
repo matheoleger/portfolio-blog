@@ -34,7 +34,7 @@ function Header (){
 
                     <ul>
                         <li><a href="/#home" onClick={() => reduceDiv()}>Accueil</a></li>
-                        <li><a href="/#bio" onClick={() => reduceDiv()}>À propos</a></li>
+                        <li><a href="/#about" onClick={() => reduceDiv()}>À propos</a></li>
                         <li><a href="/#projects" onClick={() => reduceDiv()}>Projets</a></li>
                         <li><a href="/blog" onClick={() => reduceDiv()}>Blog</a></li>
                         <li><a href="/#contact" onClick={() => reduceDiv()}>Contacter</a></li>         

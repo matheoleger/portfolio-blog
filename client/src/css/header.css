@@ -182,7 +182,8 @@ header {
     transform: translate(-50%, 0);
 }
 
-.scrolling-mouse svg {
+.scrolling-mouse {
+    filter: invert(1);
 }
 
 @media only screen and (max-width: 600px) {

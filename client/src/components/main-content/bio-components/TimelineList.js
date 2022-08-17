@@ -15,12 +15,16 @@ function TimelineList({linkToApi}) {
     }, [])
 
     return (
-        <div className="timeline-list">
-        {
-            timelineItemList.map((experience, key) => (
-                <TimelineItem key={key} {...experience}/> 
-            ))
-        }
+        <div className="timeline-container">
+            <div className="timeline-line"></div>
+            <div className="timeline-list">
+            {
+                timelineItemList.map((experience, key) => (
+                    <TimelineItem key={key} {...experience}/> 
+                ))
+            }
+            </div>
+
         </div>
     )
 }

@@ -5,9 +5,9 @@ import TimelineList from "./bio-components/TimelineList"
 function Experiences() {
 
     return (
-        <div>
+        <div className="experiences">
             <h1>Expériences</h1>
-            <p>Ici se trouve toutes mes expériences professionnelles !
+            <p className="experiences-description">Ici se trouve toutes mes expériences professionnelles !
                 Pour plus de détail sur une entreprise, vous pouvez cliquer sur le nom de cette dernière !
                 Bonne découverte 😉
             </p>

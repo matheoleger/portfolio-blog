@@ -40,5 +40,26 @@
             "establishmentName" : "Wankil Studio"
         }
     ],
-    "competences" : [""]
+    "competences" : [
+        {
+            "title": "JavaScript/TypeScript",
+            "level": "86%"
+        },
+        {
+            "title": "React",
+            "level": "75%"
+        },
+        {
+            "title": "C#",
+            "level": "70%"
+        },
+        {
+            "title": "Java",
+            "level": "70%"
+        },
+        {
+            "title": "Python",
+            "level": "76%"
+        }
+    ]
 }

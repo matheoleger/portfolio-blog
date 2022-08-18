@@ -3,6 +3,7 @@ import express from 'express';
 
 import data from "./data/data.json"
 import {getPostsFromNotion, getPost} from "./src/notionIntegration";
+import {getCompany} from "./src/getCompany"
 
 const app = express();
 app.use(express.json())
@@ -22,6 +23,11 @@ app.get("/api/experiences", (req, res) => {
 
 app.get("/api/formation", (req, res) => {
     res.json(data.formation)
+})
+
+app.get("/api/companies/:name", (req, res) => {
+    const {name} = req.params;
+    res.json(getCompany(name))
 })
 
 app.get("/api/posts", async (req, res) => {

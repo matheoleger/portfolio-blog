@@ -17,7 +17,6 @@ app.get("/api/competences", (req, res) => {
 })
 
 app.get("/api/experiences", (req, res) => {
-    console.log("ok")
     res.json(data.experiences)
 })
 
@@ -36,7 +35,6 @@ app.get("/api/posts", async (req, res) => {
 
 app.get("/api/post/:id", async (req, res) => {
     const {id} = req.params;
-    console.log({id});
     res.json(await getPost(id));
 })
 

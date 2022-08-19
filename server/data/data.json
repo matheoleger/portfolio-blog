@@ -35,31 +35,77 @@
                 "• Vérification des potentielles problèmes de droit d'auteur.",
                 "• ..."
             ],
-            "establishmentLink" : "/#about",
-            "linkingWord": "pour",
-            "establishmentName" : "Wankil Studio"
+            "establishmentLink" : "/companies/freelance",
+            "linkingWord": "principalement pour",
+            "establishmentName" : "Wankil Studio (en Auto-entreprise)"
         }
     ],
-    "competences" : [
-        {
-            "title": "JavaScript/TypeScript",
-            "level": "86%"
-        },
-        {
-            "title": "React",
-            "level": "75%"
-        },
-        {
-            "title": "C#",
-            "level": "70%"
-        },
-        {
-            "title": "Java",
-            "level": "70%"
-        },
-        {
-            "title": "Python",
-            "level": "76%"
-        }
-    ]
+    "competences" : 
+    {
+        "technical": [
+            {
+                "title": "JavaScript/TypeScript",
+                "level": "86%"
+            },
+            {
+                "title": "React",
+                "level": "75%"
+            },
+            {
+                "title": "C#",
+                "level": "70%"
+            },
+            {
+                "title": "Java",
+                "level": "70%"
+            },
+            {
+                "title": "Python",
+                "level": "76%"
+            },
+            {
+                "title": "C/C++",
+                "level": "64%"            
+            },
+            {
+                "title": "Git",
+                "level": "67%"             
+            },
+            {
+                "title": "SQL",
+                "level": "69%"         
+            }
+        ],
+        "personal": [
+            {
+                "title": "Premiere Pro CC",
+                "level": "80%"             
+            },
+            {
+                "title": "Photoshop Pro CC",
+                "level": "75%"                   
+            },
+            {
+                "title": "Créativité",
+                "level": "100%"                   
+            },
+            {
+                "title": "Autodidacte",
+                "level": "100%"                   
+            },
+            {
+                "title": "Assiduité",
+                "level": "100%"                   
+            },
+            {
+                "title": "Curiosité",
+                "level": "100%"                   
+            },
+            {
+                "title": "Esprit d'équipe",
+                "level": "100%"                   
+            }
+        ]
+    }
+
 }

@@ -10,6 +10,21 @@
     font-family: 'Ibarra Real Nova';
 } */
 
+.experiences h1 {
+    font-size: 40px;
+    margin: 40px;
+}
+
+.formation h1 {
+    font-size: 40px;
+    margin: 1.1em;
+}
+
+.experiences-description {
+    width: 40em;
+    margin: 2em auto;
+}
+
 .scriptoom-logo {
     display: flex;
     flex-direction: column;

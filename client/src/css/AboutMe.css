@@ -1,0 +1,21 @@
+.about-me {
+    width: 100vw;
+}
+
+.about-me h1 {
+    margin: 20px 20px;
+    font-size: 2.5em;
+}
+
+.about-me img {
+    width: 25em;
+    height: auto;
+    margin: 0 1.5em;
+}
+
+.about-me section {
+    margin: 6em auto;
+    display: flex;
+    justify-content: center;
+    width: 60em;
+}

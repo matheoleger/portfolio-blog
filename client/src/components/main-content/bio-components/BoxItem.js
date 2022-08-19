@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BoxItem({image, title, description}) {
+function BoxItem({image, title, description, link}) {
 
     const userHoverBox = (e) => {
         e.currentTarget.classList.add('box-item-hover');
@@ -13,13 +13,13 @@ function BoxItem({image, title, description}) {
     }
 
     return (
-        <div class="box-item-container" onMouseEnter={userHoverBox} onMouseLeave={userExitBox}>
+        <a href={link} class="box-item-container" onMouseEnter={userHoverBox} onMouseLeave={userExitBox}>
             <img class="icon-item" src={image}/>
             <div class="box-item-text">
                 <h2>{title}</h2>
                 <p>{description}</p>
             </div>
-        </div>
+        </a>
     )
 }
 

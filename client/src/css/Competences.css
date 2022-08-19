@@ -1,0 +1,40 @@
+/* .competences-item {
+    width: 40em;
+} */
+
+.competences-list {
+    margin-top: 5em;
+    justify-content: center;
+    display: grid;
+    grid: repeat(3, 15em) / repeat(3, 25em);
+    width: 100%;
+}
+
+.competences-page h1 {
+    font-size: 40px;
+    margin: 1.1em;
+    /* margin: 40px; */
+}
+
+.competences-category-title {
+    font-size: 1.8em;
+    margin-top: 3em;
+    margin-left: 6em;
+}
+
+.competences-skillbar-container {
+    height: 2em;
+    width: 20em; /* Full width */
+    background-color: #ddd; /* Grey background */
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.competences-skillbar-level {
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+
+}

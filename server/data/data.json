@@ -1,0 +1,65 @@
+{
+    "formation" : [
+        {
+            "startDate" : "Sept. 2021",
+            "endDate" : "à Juillet 2022",
+            "title" : "B2 - Informatique",
+            "description" : ["Année permettant d'approfondir nos connaissances et de choisir une spécialité pour la 3ème année."],
+            "establishmentLink" : "/#about",
+            "linkingWord": "à", 
+            "establishmentName" : "Nantes Ynov Campus"
+        }
+    ],
+    "experiences" : [
+        {
+            "startDate" : "Mai 2022",
+            "endDate" : " à août 2022",
+            "title" : "Stage de développement informatique",
+            "description" : [
+                "• Création d'automatisation pour notre outil de communication (Slack). ",
+                "• Création d'intégration entre WooCommerce et Pennylane (création de facture automatique).",
+                "• Evaluation du framework Hydrogen (test complet de l'outil pour voir si nous pouvions passer dessus).",
+                "• Recherche et développement d'algorithme."
+            ],
+            "establishmentLink" : "/companies/smt-performances",
+            "linkingWord": "chez",
+            "establishmentName" : "SMT Performances"
+        },
+        {
+            "startDate" : "Oct. 2019",
+            "endDate" : " à juillet 2022",
+            "title" : "Monteur vidéo indépendant",
+            "description" : [
+                "• Choix des passages intéressant dans les VODs.",
+                "• Montage des passages (réajustement du son, dynamisme, etc...).",
+                "• Vérification des potentielles problèmes de droit d'auteur.",
+                "• ..."
+            ],
+            "establishmentLink" : "/#about",
+            "linkingWord": "pour",
+            "establishmentName" : "Wankil Studio"
+        }
+    ],
+    "competences" : [
+        {
+            "title": "JavaScript/TypeScript",
+            "level": "86%"
+        },
+        {
+            "title": "React",
+            "level": "75%"
+        },
+        {
+            "title": "C#",
+            "level": "70%"
+        },
+        {
+            "title": "Java",
+            "level": "70%"
+        },
+        {
+            "title": "Python",
+            "level": "76%"
+        }
+    ]
+}

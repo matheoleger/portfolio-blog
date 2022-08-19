@@ -13,6 +13,13 @@
     margin: 40px;
 }
 
+.bio-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 2.5em;
+}
+
 .bio-box-item-list {
     /* height: 100%; */
     display: flex;
@@ -45,6 +52,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--pseudo-background);
+    text-decoration: none;
+    color: var(--dark-color);
 }
 
 .box-item-container img {
@@ -62,7 +71,7 @@
 .box-item-hover {
     transition: .5s ease-in-out;
     background-color: var(--main-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .box-item-text {

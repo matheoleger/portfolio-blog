@@ -8,7 +8,7 @@ function Experiences() {
         <div className="experiences">
             <h1>Expériences</h1>
             <p className="experiences-description">Ici se trouve toutes mes expériences professionnelles !
-                Pour plus de détail sur une entreprise, vous pouvez cliquer sur le nom de cette dernière !
+                Pour <b>plus de détail sur une entreprise</b>, vous pouvez <b>cliquer sur le nom</b> de cette dernière !
                 Bonne découverte 😉
             </p>
             <TimelineList linkToApi="/api/experiences"/>

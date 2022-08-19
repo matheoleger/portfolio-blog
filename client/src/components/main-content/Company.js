@@ -19,9 +19,11 @@ function Company() {
             setCompany(response.data)})
     }, [])
 
+    const LinkBlank = (props) => (<a href={props.href} target="_blank">{props.children}</a>);
+
     return (
         <div className="company">
-            <ReactMarkdown children={company} remarkPlugins={[remarkGfm]}/>
+            <ReactMarkdown children={company} components={{a: LinkBlank}} remarkPlugins={[remarkGfm]}/>
         </div>
     )
 }

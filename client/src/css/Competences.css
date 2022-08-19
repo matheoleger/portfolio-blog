@@ -7,12 +7,19 @@
     justify-content: center;
     display: grid;
     grid: repeat(3, 15em) / repeat(3, 25em);
+    width: 100%;
 }
 
 .competences-page h1 {
     font-size: 40px;
     margin: 1.1em;
     /* margin: 40px; */
+}
+
+.competences-category-title {
+    font-size: 1.8em;
+    margin-top: 3em;
+    margin-left: 6em;
 }
 
 .competences-skillbar-container {

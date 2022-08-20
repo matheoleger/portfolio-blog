@@ -1,16 +1,62 @@
 {
     "formation" : [
         {
+            "startDate" : "Sept. 2022",
+            "endDate" : "à Juillet 2023",
+            "title" : "B3 - Informatique : Développement",
+            "description" : ["Première année de spécialisation : Développement logiciel, web, etc..."],
+            "establishmentLink" : "https://www.ynov-nantes.com/",
+            "linkingWord": "à", 
+            "establishmentName" : "Nantes Ynov Campus"
+        },
+        {
             "startDate" : "Sept. 2021",
             "endDate" : "à Juillet 2022",
             "title" : "B2 - Informatique",
             "description" : ["Année permettant d'approfondir nos connaissances et de choisir une spécialité pour la 3ème année."],
-            "establishmentLink" : "/#about",
+            "establishmentLink" : "https://www.ynov-nantes.com/",
             "linkingWord": "à", 
             "establishmentName" : "Nantes Ynov Campus"
+        },
+        {
+            "startDate" : "Sept. 2020",
+            "endDate" : "à Juillet 2021",
+            "title" : "B1 - Informatique",
+            "description" : ["Année permettant de découvrir toutes les bases de l'informatique."],
+            "establishmentLink" : "https://www.ynov-nantes.com/",
+            "linkingWord": "à", 
+            "establishmentName" : "Nantes Ynov Campus"
+        },
+        {
+            "startDate" : "2020",
+            "endDate" : "",
+            "title" : "Baccalauréat: Scientifique, Sciences de l'Ingénieur.",
+            "description" : ["Obtention du Baccalauréat: Scientifique, Sciences de l'Ingénieur.", "Mention bien"],
+            "establishmentLink" : "https://aime-cesaire.paysdelaloire.e-lyco.fr/",
+            "linkingWord": "au", 
+            "establishmentName" : "Lycée Aimé Césaire"
+        },
+        {
+            "startDate" : "2017",
+            "endDate" : "",
+            "title" : "Brevet - Série Générale",
+            "description" : ["Obtention du DNB", "Mention très bien"],
+            "establishmentLink" : "https://aigrefeuille.loire-atlantique.e-lyco.fr/",
+            "linkingWord": "au", 
+            "establishmentName" : "Collège Andrée Chedid"
         }
     ],
     "experiences" : [
+        {
+            "startDate" : "À partir de Septembre 2022",
+            "endDate" : "",
+            "title" : "Alternance de développement informatique",
+            "description" : [
+            ],
+            "establishmentLink" : "/companies/smt-performances",
+            "linkingWord": "chez",
+            "establishmentName" : "SMT Performances"
+        },
         {
             "startDate" : "Mai 2022",
             "endDate" : " à août 2022",

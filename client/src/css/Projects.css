@@ -12,3 +12,39 @@
     font-size: 40px;
     margin: 40px;
 }
+
+.projects-section a {
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 20em;
+    color: #fff;
+    padding: 0 0.5em;
+    text-decoration: none;
+    margin: 0.5em 0;
+    width: 10em;
+}
+
+.projects-section a:hover {
+    background-color: var(--main-color);
+}
+
+.projects-section a img, .projects-section div img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+.projects-section a img {
+    filter: invert(1);
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}

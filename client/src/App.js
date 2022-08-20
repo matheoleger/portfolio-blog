@@ -17,16 +17,6 @@ import Entreprise from './components/main-content/Company';
 
 function App() {
 
-  const [backendData, setBackendData] = useState([{}]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api").then(
-      response => response.json()
-    ).then(
-      data => setBackendData(data)
-    )
-  }, [])
-
   document.title = "Mathéo LEGER - Portfolio"
 
   return (

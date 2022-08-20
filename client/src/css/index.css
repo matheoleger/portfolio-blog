@@ -18,6 +18,10 @@
   --light-color: rgb(255, 240, 240);
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,8 +1,14 @@
 import React from 'react';
+import QuickSlideTab from "../includes/QuickSlideTab"
+import QuickSlideButton from "../includes/QuickSideButton"
 
 import '../../css/Home.css';
 import MyImage from "../../img/profil-for-portfolio.png"; 
 import DrawingArrow from "../../svg/arrow.svg"
+import Github from "../../img/github.png"
+import CVImage from "../../img/cv.png"
+import Mail from "../../img/mail.png"
+
 
 function Home (){
     return (
@@ -22,9 +28,11 @@ function Home (){
                     </div>
                 </div>
                 <div class="home-utility-button">
-                    <a class="utility-github-button" href="github.com/matheoleger"></a>
-                    <a class="utility-blog-button" href="/blog"></a>
-                    <a class="utility-contact-button" href="/#contact"></a>
+                <QuickSlideTab border={"2px solid #000"}>
+                    <QuickSlideButton backgroundColor={"#000"} title="Mon profil Github" image={Github} link={"https://github.com/matheoleger"}/>
+                    <QuickSlideButton backgroundColor={"#000"} title="Mon CV" image={CVImage} link={"/cv"}/>
+                    <QuickSlideButton backgroundColor={"#000"} title="Me contacter" image={Mail} link={"/#contact"}/>
+                </QuickSlideTab>
                 </div>
             </div>
         </section>

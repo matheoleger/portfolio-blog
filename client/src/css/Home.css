@@ -2,6 +2,7 @@
 .home-section {
     background-color: var(--main-color);
     /* position: relative; */
+    min-height: 100vh;
 }
 
 .profil {
@@ -26,7 +27,7 @@
     right: 20%; */
     /* right: 300px; */
     color: var(--bg-color);
-    margin-right: 20em;
+    /* margin-right: 20em; */
 }
 
 .profil h1 {
@@ -64,16 +65,29 @@
     width: 350px;
 }
 
+.home-utility-button {
+    margin-right: 10em;
+}
+
 @media only screen and (max-width: 600px) {
     .profil img {
         margin-left: -9em;
     }
 
+    .profil {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .profil .name-desc {
-        top: 32em;
+        top: -20em;
         color: var(--bg-color);
         /* background-color: var(--bg-color); */
-        position: absolute;
+        /* position: absolute; */
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -105,6 +119,10 @@
     .profil p {
         color: var(--pseudo-background);
         margin-left: 2em;
+    }
+
+    .home-utility-button {
+        display: none;
     }
 }
 

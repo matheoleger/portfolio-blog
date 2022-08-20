@@ -5,6 +5,7 @@
     background-position:center;
     background-size: cover;
     background-color: rgb(245, 231, 231);
+    min-height: 100vh;
 }
 
 .projects-section h1 {

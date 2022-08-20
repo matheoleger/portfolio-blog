@@ -1,7 +1,6 @@
 {
   "name": "portfolio-blog",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@9gustin/react-notion-render": "^3.11.0",

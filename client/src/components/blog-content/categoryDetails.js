@@ -16,12 +16,16 @@ import SummaryCard from "./summaryCard";
     --> il sera surement plus simple d'utiliser Remarkable et de mettre le contenu dans un composant React (2eme solution donc)
 */
 
-function CategoryDetails ({category, setListOfCategories}){
+function CategoryDetails ({category, setListOfCategories, setIsLoading}){
     
     const [posts, setPosts] = useState([]);
 
     const setCardsInformations = () => {
-        axios.get("/api/posts").then((response) => setPosts(response.data));
+        axios.get("/api/posts").then((response) => {
+            setPosts(response.data)
+            console.log(response.data);
+            setIsLoading(false);
+        });
     }
 
     useEffect(() => {
@@ -49,7 +53,7 @@ function CategoryDetails ({category, setListOfCategories}){
             <h2 className="category-name">{category}</h2>
             <section className="bloghome-summarycard-list">
                 {
-                (posts) ?
+                (posts.length) ?
                 posts.map((post, key) => {
                     if(category == "Tous les articles") {
                         return(

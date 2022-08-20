@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import CompetenceItem from "./bio-components/CompetenceItem"
+import ReturnButton from "../includes/ReturnButton";
 
 import "../../css/Competences.css"
 
@@ -17,6 +18,7 @@ function Competences() {
 
     return (
         <div className="competences-page">
+            <ReturnButton link={"/#about"}/>
             <h1>Compétences</h1>
             <div className="competences-container">
                 <h2 className="competences-category-title">Compétences techniques</h2>

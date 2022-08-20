@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ReturnButton from "../includes/ReturnButton";
+
 import '../../css/AboutMe.css';
 import SpacePersonSVG from '../../svg/space-person-phone.svg';
 import WindowMountainSpaceSVG from '../../svg/window-mountain-space.svg'
@@ -9,6 +11,7 @@ import CameraGearPersonSVG from "../../svg/cameragear-person.svg"
 function AboutMe (){
     return (
         <div className="about-me">
+            <ReturnButton link={"/#about"}/>
             <h1>Qui suis-je ?</h1>
             <section className="about-me-section">
                 <img src={SpacePersonSVG}/>

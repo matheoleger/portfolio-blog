@@ -11,9 +11,10 @@
 }
 
 .competences-page h1 {
-    font-size: 40px;
-    margin: 1.1em;
+    font-size: 2.6em;
+    margin: 1.1em auto;
     /* margin: 40px; */
+    text-align: center;
 }
 
 .competences-category-title {

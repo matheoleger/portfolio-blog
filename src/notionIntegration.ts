@@ -57,14 +57,15 @@ const pageToPostTransformer = async (page: any) => {
     const formattedPageItems = await getPropertiesOfPage(page.id, page.properties);
 
     // console.log(formattedPageItems.Description.results);
+    console.log({Updated: formattedPageItems.Updated});
     console.log(formattedPageItems.Slug.formula);
     return {
         id: page.id,
-        cover: cover,
+        cover: cover.url ?? cover,
         title: formattedPageItems.Name.results[0].title.plain_text,
         tags: formattedPageItems.Tags.multi_select,
         description: formattedPageItems.Description.results[0].rich_text.plain_text,
-        date: formattedPageItems.Updated.last_edited_time,
+        date: formattedPageItems.Updated.last_edited_time ?? formattedPageItems.Updated.date.start,
         slug: formattedPageItems.Slug.formula.string,
     }
 }

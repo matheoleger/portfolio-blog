@@ -7,6 +7,7 @@ import DrawingArrow from "../svg/arrow.svg"
 import Home from './main-content/Home';
 import About from './main-content/Biography';
 import Projects from './main-content/Projects';
+import Contact from './main-content/Contact';
 
 function Main (){
     return (
@@ -14,6 +15,7 @@ function Main (){
             <Home/>
             <About/>
             <Projects/>
+            <Contact/>
         </main>
     )
 }

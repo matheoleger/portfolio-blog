@@ -126,5 +126,64 @@
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .profil img {
+        margin-left: -9em;
+        display: none;
+    }
+
+    .profil {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profil .name-desc {
+        /* top: -20em; */
+        color: var(--bg-color);
+        /* background-color: var(--bg-color); */
+        /* position: absolute; */
+        /* position: relative; */
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .profil .name-desc h1 {
+        font-size: 80px;
+        background-color: var(--dark-color);
+        color: var(--pseudo-background);
+        /* margin-left: .1em; */
+        padding-left: .2em
+    }
+
+    .profil #lastname {
+        margin-top: -.1em;
+        padding: 0;
+        height: 1.3em;
+        padding-left: .2em;
+        width: 3.3em;
+    }
+
+    .profil #firstname {
+        height: 1.4em;
+        padding-right: 0.2em;
+        /* width: 3.3em;    */
+    }
+
+    .profil p {
+        color: var(--pseudo-background);
+        /* margin-left: 2em; */
+    }
+
+    .home-utility-button {
+        display: none;
+    }
+}
+
 
   

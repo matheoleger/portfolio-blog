@@ -24,9 +24,27 @@ function Post (){
 
     useEffect(getPostBySlug, []);
 
+    const getWindowDimensions = () => {
+        const { innerWidth: width, innerHeight: height } = window;
+        console.log(height, width);
+        return {
+          width,
+          height
+        };
+    }
+
+    const { height, width } = getWindowDimensions();
+
     return (
         <div>
             <ReturnButton link="/blog" isFixed={true}/>
+            {
+                (width <= 600) ? (
+                <div className="background-header"></div>
+                ) : (
+                <></>
+                )
+            }
             <article className="post">
                 {
                     (post.post) ? (

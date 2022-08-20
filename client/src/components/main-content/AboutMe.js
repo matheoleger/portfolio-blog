@@ -23,7 +23,7 @@ function AboutMe (){
                     <p>Malgré tout, voici quelques-unes de mes passions : l'espace, la vidéo, le cinéma, l'informatique, le skate, etc...</p>
                 </div>
             </section>
-            <section>
+            <section className="about-me-section about-me-section-invert">
                 <div>
                     <p>💻Passionné par l'informatique et la programmation depuis l'âge de 11 ans, j'ai à cœur de travailler dans ce domaine. 
                     J'ai toujours trouvé le développement (logiciel, web, jeu vidéo, etc...) comme un moyen d'exprimer sa créativité
@@ -33,7 +33,7 @@ function AboutMe (){
                 </div>
                 <img src={ProgrammingSVG}/>
             </section>
-            <section>
+            <section className="about-me-section">
                 <img src={CameraGearPersonSVG}/>
                 <div>
                     <p>🎬Ma créativité se reflète aussi via le montage vidéo et plus généralement l'audiovisuel, 

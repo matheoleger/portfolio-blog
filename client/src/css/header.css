@@ -190,4 +190,8 @@ header {
     .navbar_wrapper_appear {
         width: 100vw;
     }
+
+    .scrolling-mouse {
+        display: none;
+    }
 }

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import { ClipLoader, BarLoader, BeatLoader, BounceLoader, CircleLoader, ClimbingBoxLoader } from "react-spinners";
-import {useLocation } from 'react-router';
+import {useLocation, useParams} from 'react-router';
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
@@ -13,16 +13,23 @@ import '../../css/SummaryCard.css';
 function Post (){
  
     const params= useLocation();
-    const {id} = params.state;
+    const { post:postSlug } = useParams();
 
-    const [post, setPost] = useState({});
-
-    const getPostBySlug = () => {
-        axios.get(`/api/post/${id}`).then((response) => {setPost(response.data); console.log({response}); console.log(response.data.post)});
-
+    const getIdBySlug = () => {
+        const id = postSlug.match(/(?:[^-](?!(-)))+$/gm);
+        return {id};
     }
 
-    useEffect(getPostBySlug, []);
+    const {id} = params.state ?? getIdBySlug();
+    const [post, setPost] = useState({});
+
+    const getPost = () => {
+        // -(?:.(?!-))+$
+        // (?:[^-](?!(-)))+$
+        axios.get(`/api/post/${id}`).then((response) => {setPost(response.data); console.log({response}); console.log(response.data.post)});
+    }
+
+    useEffect(getPost, []);
 
     const getWindowDimensions = () => {
         const { innerWidth: width, innerHeight: height } = window;
